@@ -25,7 +25,7 @@
   </target>
 	
   <target name="jar" depends="compile">
-  <jar destfile="smppsim.jar" manifest="${src}/java/manifest.txt" basedir="${classes}">
+  <jar destfile="smppsim_olli.jar" manifest="${src}/java/manifest.txt" basedir="${classes}">
     <manifest>
       <attribute name="Main-Class" value="com/seleniumsoftware/SMPPSim/SMPPSim"/>
     </manifest>
