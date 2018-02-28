@@ -43,7 +43,10 @@ package com.seleniumsoftware.SMPPSim;
 
 import com.seleniumsoftware.SMPPSim.pdu.*;
 import com.seleniumsoftware.SMPPSim.pdu.util.PduUtilities;
+import com.seleniumsoftware.SMPPSim.tools.ChuckNorris;
+import com.seleniumsoftware.SMPPSim.tools.JsonReader;
 import com.seleniumsoftware.SMPPSim.util.Utilities;
+import org.json.JSONObject;
 
 import java.io.*;
 import java.net.*;
@@ -215,12 +218,14 @@ public class SMPPSim {
 		SMPPSim smppsim = new SMPPSim();
 		try {
 			smppsim.start(args[0]);
+
+			logger.info("-------------- Started :) ---------------");
+			logger.info("BTW: " + ChuckNorris.Quote());
 		} catch (Exception e) {
 			logger.severe("Exception during start up " + e.getMessage());
 			logger.severe("Exception is of type: " + e.getClass().getName());
 			logger.log(Level.SEVERE, "Exception during start up", e);
 		}
-
 	}
 
 	public void start(String properties_file_name) throws Exception {
