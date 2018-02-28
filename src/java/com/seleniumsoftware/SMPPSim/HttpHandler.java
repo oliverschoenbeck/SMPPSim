@@ -1171,6 +1171,7 @@ public class HttpHandler implements Runnable {
 			smppmsg.addVsop(t, ln, val);
 		}
 
+
 		return smppmsg;
 	}
 
