@@ -1,0 +1,398 @@
+2019.03.28 13:22:29 622 INFO    1 ==============================================================
+2019.03.28 13:22:29 740 INFO    1 =  SMPPSim Copyright (C) 2006 Selenium Software Ltd
+2019.03.28 13:22:29 740 INFO    1 =  SMPPSim comes with ABSOLUTELY NO WARRANTY; for details
+2019.03.28 13:22:29 740 INFO    1 =  read the license.txt file that was included in the SMPPSim distribution
+2019.03.28 13:22:29 740 INFO    1 =  This is free software, and you are welcome to redistribute it under
+2019.03.28 13:22:29 741 INFO    1 =  certain conditions; Again, see license.txt for details or read the GNU
+2019.03.28 13:22:29 741 INFO    1 =  GPL license at http://www.gnu.org/licenses/gpl.html
+2019.03.28 13:22:29 741 INFO    1 =  ...... end of legal stuff ......
+2019.03.28 13:22:29 742 INFO    1 ==============================================================
+2019.03.28 13:22:29 742 INFO    1 =  
+2019.03.28 13:22:29 742 INFO    1 =  com.seleniumsoftware.SMPPSim 2.6.11
+2019.03.28 13:22:29 742 INFO    1 =  by Martin Woolley (martin@seleniumsoftware.com)
+2019.03.28 13:22:29 742 INFO    1 =  http://www.seleniumsoftware.com
+2019.03.28 13:22:29 742 INFO    1 =  Running with the following parameters:
+2019.03.28 13:22:29 742 INFO    1 =  SMPP_PORT                               :2775
+2019.03.28 13:22:29 742 INFO    1 =  SMPP_CONNECTION_HANDLERS                :10
+2019.03.28 13:22:29 742 INFO    1 =  CONNECTION_HANDLER_CLASS                :com.seleniumsoftware.SMPPSim.StandardConnectionHandler
+2019.03.28 13:22:29 742 INFO    1 =  PROTOCOL_HANDLER_CLASS                  :com.seleniumsoftware.SMPPSim.MfdProtocolHandler
+2019.03.28 13:22:29 743 INFO    1 =  LIFE_CYCLE_MANAGER                      :com.seleniumsoftware.SMPPSim.LifeCycleManager
+2019.03.28 13:22:29 743 INFO    1 =  SMPP_CONNECTION_HANDLERS                :10
+2019.03.28 13:22:29 743 INFO    1 =  INBOUND_QUEUE_CAPACITY                  :1000
+2019.03.28 13:22:29 743 INFO    1 =  OUTBOUND_QUEUE_CAPACITY                 :1000
+2019.03.28 13:22:29 743 INFO    1 =  MESSAGE_STATE_CHECK_FREQUENCY           :5000
+2019.03.28 13:22:29 743 INFO    1 =  MAX_TIME_ENROUTE                        :10000
+2019.03.28 13:22:29 743 INFO    1 =  PERCENTAGE_THAT_TRANSITION              :100
+2019.03.28 13:22:29 743 INFO    1 =  PERCENTAGE_DELIVERED                    :80
+2019.03.28 13:22:29 743 INFO    1 =  PERCENTAGE_UNDELIVERABLE                :12
+2019.03.28 13:22:29 743 INFO    1 =  PERCENTAGE_ACCEPTED                     :4
+2019.03.28 13:22:29 743 INFO    1 =  PERCENTAGE_REJECTED                     :4
+2019.03.28 13:22:29 743 INFO    1 =  DISCARD_FROM_QUEUE_AFTER                :60000
+2019.03.28 13:22:29 744 INFO    1 =  OUTBIND_ENABLED                         :false
+2019.03.28 13:22:29 744 INFO    1 =  OUTBIND_ESME_IP_ADDRESS                 :null
+2019.03.28 13:22:29 744 INFO    1 =  OUTBIND_ESME_PORT		                :0
+2019.03.28 13:22:29 744 INFO    1 =  OUTBIND_ESME_PASSWORD                   :password
+2019.03.28 13:22:29 744 INFO    1 =  HTTP_PORT                               :88
+2019.03.28 13:22:29 744 INFO    1 =  HTTP_THREADS                            :1
+2019.03.28 13:22:29 744 INFO    1 =  DOCROOT                                 :www
+2019.03.28 13:22:29 744 INFO    1 =  AUTHORISED_FILES                        :/css/style.css,/index.htm,/inject_mo.htm,/favicon.ico,/images/logo.gif,/images/dots.gif,/user-guide.htm,/images/homepage.gif,/images/inject_mo.gif
+2019.03.28 13:22:29 744 INFO    1 =  INJECT_MO_PAGE                          :/inject_mo.htm
+2019.03.28 13:22:29 745 INFO    1 =  SMSCID                                  :SMPPSim
+2019.03.28 13:22:29 745 INFO    1 =  DELIVERY_MESSAGES_PER_MINUTE            :0
+2019.03.28 13:22:29 745 INFO    1 =  DELIVER_MESSAGES_FILE                   :N/A
+2019.03.28 13:22:29 745 INFO    1 =  LOOPBACK                                :false
+2019.03.28 13:22:29 745 INFO    1 =  CAPTURE_REQUESTS_BINARY                 :false
+2019.03.28 13:22:29 745 INFO    1 =  CAPTURE_REQUESTS_BINARY_TO_FILE         :sme_binary.capture
+2019.03.28 13:22:29 745 INFO    1 =  CAPTURE_RESPONSES_BINARY                :false
+2019.03.28 13:22:29 745 INFO    1 =  CAPTURE_RESPONSES_BINARY_TO_FILE        :smppsim_binary.capture
+2019.03.28 13:22:29 746 INFO    1 =  CAPTURE_REQUESTS_DECODED                :false
+2019.03.28 13:22:29 746 INFO    1 =  CAPTURE_REQUESTS_DECODED_TO_FILE        :sme_decoded.capture
+2019.03.28 13:22:29 746 INFO    1 =  CAPTURE_RESPONSES_DECODED               :false
+2019.03.28 13:22:29 746 INFO    1 =  CAPTURE_RESPONSES_DECODED_TO_FILE       :smppsim_decoded.capture
+2019.03.28 13:22:29 746 INFO    1 =  CALLBACK                                :false
+2019.03.28 13:22:29 747 INFO    1 = Delivery receipts will always have optional parameter with TLV=5123/10/34343132333435363738
+2019.03.28 13:22:29 747 INFO    1 = Delivery receipts will include standard optional parameters if client supports 3.4 or later
+2019.03.28 13:22:29 748 INFO    1 =  
+2019.03.28 13:22:29 748 INFO    1 ==============================================================
+2019.03.28 13:22:29 773 INFO    13 StandardConnectionHandler waiting for connection
+2019.03.28 13:22:29 773 INFO    1 Starting delivery receipts delay service....
+2019.03.28 13:22:29 775 INFO    12 StandardConnectionHandler waiting for connection
+2019.03.28 13:22:29 776 INFO    14 StandardConnectionHandler waiting for connection
+2019.03.28 13:22:29 779 INFO    16 StandardConnectionHandler waiting for connection
+2019.03.28 13:22:29 780 INFO    15 StandardConnectionHandler waiting for connection
+2019.03.28 13:22:29 780 INFO    18 StandardConnectionHandler waiting for connection
+2019.03.28 13:22:29 781 INFO    17 StandardConnectionHandler waiting for connection
+2019.03.28 13:22:29 781 INFO    19 StandardConnectionHandler waiting for connection
+2019.03.28 13:22:29 782 INFO    20 StandardConnectionHandler waiting for connection
+2019.03.28 13:22:29 782 INFO    21 StandardConnectionHandler waiting for connection
+2019.03.28 13:22:29 783 INFO    22 Starting HttpHandler thread. Listening on port 88 for connections
+2019.03.28 13:22:29 783 INFO    23 Starting InboundQueue service....
+2019.03.28 13:22:29 783 INFO    24 Starting Lifecycle Service (OutboundQueue)
+2019.03.28 13:22:29 784 INFO    24 Lifecycle Service: OutboundQueue is empty  - waiting
+2019.03.28 13:22:29 785 INFO    23 InboundQueue: empty  - waiting
+2019.03.28 13:22:29 786 INFO    25 Starting DelayedDrQueue service....
+2019.03.28 13:22:29 790 INFO    27 Starting DelayedInboundQueue service....
+2019.03.28 13:22:30 161 INFO    13 StandardConnectionHandler accepted a connection
+2019.03.28 13:22:30 179 INFO    13 Protocol handler is of type MFDProtocolHandler
+2019.03.28 13:22:40 161 INFO    21 StandardConnectionHandler accepted a connection
+2019.03.28 13:22:40 162 INFO    21 Protocol handler is of type MFDProtocolHandler
+2019.03.28 13:22:40 170 INFO    21 : BIND_TRANSCEIVER:
+2019.03.28 13:22:40 170 INFO    21 Hex dump (42) bytes:
+2019.03.28 13:22:40 170 INFO    21 0000002A:00000009:00000000:0000002B:
+2019.03.28 13:22:40 171 INFO    21 6D666400:6D666440:736D7363:0056784D:
+2019.03.28 13:22:40 171 INFO    21 6664536D:73003400:0000
+2019.03.28 13:22:40 172 INFO    21 cmd_len=42,cmd_id=9,cmd_status=0,seq_no=43,system_id=mfd,password=mfd@smsc
+2019.03.28 13:22:40 172 INFO    21 system_type=VxMfdSms,interface_version=52,addr_ton=0,addr_npi=0,address_range=
+2019.03.28 13:22:40 172 INFO    21  
+2019.03.28 13:22:40 172 INFO    21 StandardProtocolHandler: setting address range to 
+2019.03.28 13:22:40 173 INFO    21 New transceiver session bound to SMPPSim
+2019.03.28 13:22:40 173 INFO    21 : BIND_TRANSCEIVER_RESP:
+2019.03.28 13:22:40 173 INFO    21 Hex dump (24) bytes:
+2019.03.28 13:22:40 173 INFO    21 00000018:80000009:00000000:0000002B:
+2019.03.28 13:22:40 174 INFO    21 534D5050:53696D00:
+2019.03.28 13:22:40 174 INFO    21 cmd_len=0,cmd_id=-2147483639,cmd_status=0,seq_no=43,system_id=SMPPSim
+2019.03.28 13:22:40 174 INFO    21  
+2019.03.28 13:22:40 175 INFO    21 1 receivers connected and bound
+2019.03.28 13:22:40 176 INFO    23 InboundQueue: empty  - waiting
+2019.03.28 13:22:43 724 INFO    21 : Standard SUBMIT_SM:
+2019.03.28 13:22:43 725 INFO    21 Hex dump (88) bytes:
+2019.03.28 13:22:43 725 INFO    21 00000058:00000004:00000000:0000002E:
+2019.03.28 13:22:43 725 INFO    21 00000037:39393831:38303100:00003034:
+2019.03.28 13:22:43 725 INFO    21 33323030:34343430:31000000:00003139:
+2019.03.28 13:22:43 726 INFO    21 30333238:31333232:34343730:342B0001:
+2019.03.28 13:22:43 726 INFO    21 00030014:42656665:686C7368:616C7420:
+2019.03.28 13:22:43 726 INFO    21 65727761:7274656E:
+2019.03.28 13:22:43 727 INFO    21 cmd_len=88,cmd_id=4,cmd_status=0,seq_no=46,service_type=,source_addr_ton=0
+2019.03.28 13:22:43 727 INFO    21 source_addr_npi=0,source_addr=79981801,dest_addr_ton=0,dest_addr_npi=0
+2019.03.28 13:22:43 727 INFO    21 dest_addr=04320044401,esm_class=0,protocol_ID=0,priority_flag=0
+2019.03.28 13:22:43 727 INFO    21 schedule_delivery_time=,validity_period=190328132244704+
+2019.03.28 13:22:43 728 INFO    21 registered_delivery_flag=1,replace_if_present_flag=0,data_coding=3
+2019.03.28 13:22:43 728 INFO    21 sm_default_msg_id=0,sm_length=20,short_message=Befehlshalt erwarten
+2019.03.28 13:22:43 728 INFO    21  
+2019.03.28 13:22:43 733 WARNING 21 SMPPSim currently only supports time component nn=00. Value replaced with 00
+2019.03.28 13:22:43 734 INFO    21 Delaying response by 0ms
+2019.03.28 13:22:43 734 INFO    24 Assessing state of 1 messages in the OutboundQueue
+2019.03.28 13:22:43 734 INFO    21 :SUBMIT_SM_RESP:
+2019.03.28 13:22:43 734 INFO    21 Hex dump (18) bytes:
+2019.03.28 13:22:43 734 INFO    21 00000012:80000004:00000000:0000002E:
+2019.03.28 13:22:43 734 INFO    21 3000
+2019.03.28 13:22:43 734 INFO    21 cmd_len=0,cmd_id=-2147483644,cmd_status=0,seq_no=46,message_id=0
+2019.03.28 13:22:43 735 INFO    21  
+2019.03.28 13:22:43 735 INFO    21 SubmitSM processing - response written to connection
+2019.03.28 13:22:48 735 INFO    24 Assessing state of 1 messages in the OutboundQueue
+2019.03.28 13:22:48 735 INFO    24 Message:46 state=UNDELIVERABLE
+2019.03.28 13:22:48 735 INFO    24 Delivery Receipt requested
+2019.03.28 13:22:53 736 INFO    24 Assessing state of 1 messages in the OutboundQueue
+2019.03.28 13:22:54 788 INFO    23 addressIsServicedByReceiver(79981801)
+2019.03.28 13:22:54 788 INFO    23 DELIVER_SM (receipt):
+2019.03.28 13:22:54 788 INFO    23 Hex dump (197) bytes:
+2019.03.28 13:22:54 788 INFO    23 000000C5:00000005:00000000:00000001:
+2019.03.28 13:22:54 788 INFO    23 00000030:34333230:30343434:30310000:
+2019.03.28 13:22:54 788 INFO    23 00373939:38313830:31000400:00000000:
+2019.03.28 13:22:54 788 INFO    23 00030071:69643A30:20737562:3A303031:
+2019.03.28 13:22:54 789 INFO    23 20646C76:72643A30:30312073:75626D69:
+2019.03.28 13:22:54 789 INFO    23 74206461:74653A31:39303332:38313332:
+2019.03.28 13:22:54 789 INFO    23 3220646F:6E652064:6174653A:31393033:
+2019.03.28 13:22:54 789 INFO    23 32383133:32322073:7461743A:554E4445:
+2019.03.28 13:22:54 789 INFO    23 4C495620:6572723A:30303020:54657874:
+2019.03.28 13:22:54 789 INFO    23 3A426566:65686C73:68616C74:20657277:
+2019.03.28 13:22:54 789 INFO    23 61727465:6E001E00:02300004:27000105:
+2019.03.28 13:22:54 789 INFO    23 04230003:03000114:03000A34:34313233:
+2019.03.28 13:22:54 789 INFO    23 34353637:38
+2019.03.28 13:22:54 789 INFO    23 cmd_len=0,cmd_id=5,cmd_status=0,seq_no=1,service_type=,source_addr_ton=0
+2019.03.28 13:22:54 789 INFO    23 source_addr_npi=0,source_addr=04320044401,dest_addr_ton=0,dest_addr_npi=0
+2019.03.28 13:22:54 789 INFO    23 destination_addr=79981801,esm_class=4,protocol_ID=0,priority_flag=0
+2019.03.28 13:22:54 789 INFO    23 schedule_delivery_time=,validity_period=,registered_delivery_flag=0
+2019.03.28 13:22:54 789 INFO    23 replace_if_present_flag=0,data_coding=3,sm_default_msg_id=0,sm_length=113
+2019.03.28 13:22:54 789 INFO    23 short_message=id:0 sub:001 dlvrd:001 submit date:1903281322 done date:1903281322 stat:UNDELIV err:000 Text:Befehlshalt erwarten
+2019.03.28 13:22:54 790 INFO    23 TLV=30/2/3000,TLV=1063/1/05,TLV=1059/3/030001,TLV=5123/10/34343132333435363738
+2019.03.28 13:22:54 790 INFO    23  
+2019.03.28 13:22:54 790 INFO    23 InboundQueue: empty  - waiting
+2019.03.28 13:22:54 935 INFO    21 : DELIVER_SM_RESP:
+2019.03.28 13:22:54 935 INFO    21 Hex dump (17) bytes:
+2019.03.28 13:22:54 935 INFO    21 00000011:80000005:00000000:00000001:
+2019.03.28 13:22:54 935 INFO    21 00
+2019.03.28 13:22:54 935 INFO    21 cmd_len=17,cmd_id=-2147483643,cmd_status=0,seq_no=1,system_id= 
+2019.03.28 13:22:54 936 INFO    21  
+2019.03.28 13:22:58 736 INFO    24 Assessing state of 1 messages in the OutboundQueue
+2019.03.28 13:23:03 737 INFO    24 Assessing state of 1 messages in the OutboundQueue
+2019.03.28 13:23:08 737 INFO    24 Assessing state of 1 messages in the OutboundQueue
+2019.03.28 13:23:13 67  INFO    21 : CANCEL_SM:
+2019.03.28 13:23:13 67  INFO    21 Hex dump (33) bytes:
+2019.03.28 13:23:13 68  INFO    21 00000021:00000008:00000000:00000034:
+2019.03.28 13:23:13 68  INFO    21 00300000:00373939:38313830:31000000:
+2019.03.28 13:23:13 68  INFO    21 00
+2019.03.28 13:23:13 68  INFO    21 cmd_len=33,cmd_id=8,cmd_status=0,seq_no=52,service_type=,original_message_id=0
+2019.03.28 13:23:13 68  INFO    21 source_addr_ton=0,source_addr_npi=0,source_addr=79981801,dest_addr_ton=0
+2019.03.28 13:23:13 68  INFO    21 dest_addr_npi=0,destination_addr
+2019.03.28 13:23:13 68  INFO    21  
+2019.03.28 13:23:13 68  INFO    21 :CANCEL_SM_RESP:
+2019.03.28 13:23:13 68  INFO    21 Hex dump (16) bytes:
+2019.03.28 13:23:13 68  INFO    21 00000010:80000008:00000000:00000034:
+2019.03.28 13:23:13 68  INFO    21 
+2019.03.28 13:23:13 69  INFO    21 cmd_len=0,cmd_id=-2147483640,cmd_status=0,seq_no=52
+2019.03.28 13:23:13 69  INFO    21  
+2019.03.28 13:23:13 737 INFO    24 Lifecycle Service: OutboundQueue is empty  - waiting
+2019.03.28 13:23:20 118 INFO    21 : CANCEL_SM:
+2019.03.28 13:23:20 118 INFO    21 Hex dump (33) bytes:
+2019.03.28 13:23:20 118 INFO    21 00000021:00000008:00000000:00000037:
+2019.03.28 13:23:20 118 INFO    21 00300000:00373939:38313830:31000000:
+2019.03.28 13:23:20 119 INFO    21 00
+2019.03.28 13:23:20 119 INFO    21 cmd_len=33,cmd_id=8,cmd_status=0,seq_no=55,service_type=,original_message_id=0
+2019.03.28 13:23:20 119 INFO    21 source_addr_ton=0,source_addr_npi=0,source_addr=79981801,dest_addr_ton=0
+2019.03.28 13:23:20 119 INFO    21 dest_addr_npi=0,destination_addr
+2019.03.28 13:23:20 119 INFO    21  
+2019.03.28 13:23:20 119 INFO    21 : CANCEL_SM_RESP (ESME_RCANCELFAIL):
+2019.03.28 13:23:20 119 INFO    21 Hex dump (16) bytes:
+2019.03.28 13:23:20 119 INFO    21 00000010:80000008:00000011:00000037:
+2019.03.28 13:23:20 119 INFO    21 
+2019.03.28 13:23:20 119 INFO    21 cmd_len=16,cmd_id=-2147483640,cmd_status=17,seq_no=55
+2019.03.28 13:23:29 791 INFO    27 Processing 0 messages in the delayed inbound queue
+2019.03.28 13:23:33 278 INFO    21 : Standard SUBMIT_SM:
+2019.03.28 13:23:33 279 INFO    21 Hex dump (88) bytes:
+2019.03.28 13:23:33 279 INFO    21 00000058:00000004:00000000:0000003A:
+2019.03.28 13:23:33 279 INFO    21 00000037:39393831:38303100:00003034:
+2019.03.28 13:23:33 279 INFO    21 33323030:31343130:31000000:00003139:
+2019.03.28 13:23:33 279 INFO    21 30333238:31333233:33343230:342B0001:
+2019.03.28 13:23:33 279 INFO    21 00030014:42656665:686C7368:616C7420:
+2019.03.28 13:23:33 279 INFO    21 65727761:7274656E:
+2019.03.28 13:23:33 279 INFO    21 cmd_len=88,cmd_id=4,cmd_status=0,seq_no=58,service_type=,source_addr_ton=0
+2019.03.28 13:23:33 279 INFO    21 source_addr_npi=0,source_addr=79981801,dest_addr_ton=0,dest_addr_npi=0
+2019.03.28 13:23:33 279 INFO    21 dest_addr=04320014101,esm_class=0,protocol_ID=0,priority_flag=0
+2019.03.28 13:23:33 279 INFO    21 schedule_delivery_time=,validity_period=190328132334204+
+2019.03.28 13:23:33 279 INFO    21 registered_delivery_flag=1,replace_if_present_flag=0,data_coding=3
+2019.03.28 13:23:33 279 INFO    21 sm_default_msg_id=0,sm_length=20,short_message=Befehlshalt erwarten
+2019.03.28 13:23:33 279 INFO    21  
+2019.03.28 13:23:33 280 WARNING 21 SMPPSim currently only supports time component nn=00. Value replaced with 00
+2019.03.28 13:23:33 280 INFO    21 Delaying response by 137ms
+2019.03.28 13:23:33 280 INFO    24 Assessing state of 1 messages in the OutboundQueue
+2019.03.28 13:23:33 417 INFO    21 :SUBMIT_SM_RESP:
+2019.03.28 13:23:33 417 INFO    21 Hex dump (18) bytes:
+2019.03.28 13:23:33 417 INFO    21 00000012:80000004:00000000:0000003A:
+2019.03.28 13:23:33 417 INFO    21 3100
+2019.03.28 13:23:33 417 INFO    21 cmd_len=0,cmd_id=-2147483644,cmd_status=0,seq_no=58,message_id=1
+2019.03.28 13:23:33 417 INFO    21  
+2019.03.28 13:23:33 417 INFO    21 SubmitSM processing - response written to connection
+2019.03.28 13:23:38 280 INFO    24 Assessing state of 1 messages in the OutboundQueue
+2019.03.28 13:23:38 280 INFO    24 Message:58 state=DELIVERED
+2019.03.28 13:23:38 280 INFO    24 Delivery Receipt requested
+2019.03.28 13:23:43 281 INFO    24 Assessing state of 1 messages in the OutboundQueue
+2019.03.28 13:23:44 795 INFO    23 addressIsServicedByReceiver(79981801)
+2019.03.28 13:23:44 795 INFO    23 DELIVER_SM (receipt):
+2019.03.28 13:23:44 795 INFO    23 Hex dump (190) bytes:
+2019.03.28 13:23:44 795 INFO    23 000000BE:00000005:00000000:00000002:
+2019.03.28 13:23:44 795 INFO    23 00000030:34333230:30313431:30310000:
+2019.03.28 13:23:44 795 INFO    23 00373939:38313830:31000400:00000000:
+2019.03.28 13:23:44 795 INFO    23 00030071:69643A31:20737562:3A303031:
+2019.03.28 13:23:44 795 INFO    23 20646C76:72643A30:30312073:75626D69:
+2019.03.28 13:23:44 795 INFO    23 74206461:74653A31:39303332:38313332:
+2019.03.28 13:23:44 795 INFO    23 3320646F:6E652064:6174653A:31393033:
+2019.03.28 13:23:44 795 INFO    23 32383133:32332073:7461743A:44454C49:
+2019.03.28 13:23:44 795 INFO    23 56524420:6572723A:30303020:54657874:
+2019.03.28 13:23:44 795 INFO    23 3A426566:65686C73:68616C74:20657277:
+2019.03.28 13:23:44 796 INFO    23 61727465:6E001E00:02310004:27000102:
+2019.03.28 13:23:44 796 INFO    23 1403000A:34343132:33343536:3738
+2019.03.28 13:23:44 796 INFO    23 cmd_len=0,cmd_id=5,cmd_status=0,seq_no=2,service_type=,source_addr_ton=0
+2019.03.28 13:23:44 796 INFO    23 source_addr_npi=0,source_addr=04320014101,dest_addr_ton=0,dest_addr_npi=0
+2019.03.28 13:23:44 796 INFO    23 destination_addr=79981801,esm_class=4,protocol_ID=0,priority_flag=0
+2019.03.28 13:23:44 796 INFO    23 schedule_delivery_time=,validity_period=,registered_delivery_flag=0
+2019.03.28 13:23:44 796 INFO    23 replace_if_present_flag=0,data_coding=3,sm_default_msg_id=0,sm_length=113
+2019.03.28 13:23:44 796 INFO    23 short_message=id:1 sub:001 dlvrd:001 submit date:1903281323 done date:1903281323 stat:DELIVRD err:000 Text:Befehlshalt erwarten
+2019.03.28 13:23:44 796 INFO    23 TLV=30/2/3100,TLV=1063/1/02,TLV=5123/10/34343132333435363738
+2019.03.28 13:23:44 796 INFO    23  
+2019.03.28 13:23:44 796 INFO    23 InboundQueue: empty  - waiting
+2019.03.28 13:23:44 928 INFO    21 : DELIVER_SM_RESP:
+2019.03.28 13:23:44 929 INFO    21 Hex dump (17) bytes:
+2019.03.28 13:23:44 929 INFO    21 00000011:80000005:00000000:00000002:
+2019.03.28 13:23:44 929 INFO    21 00
+2019.03.28 13:23:44 929 INFO    21 cmd_len=17,cmd_id=-2147483643,cmd_status=0,seq_no=2,system_id= 
+2019.03.28 13:23:44 929 INFO    21  
+2019.03.28 13:23:48 281 INFO    24 Assessing state of 1 messages in the OutboundQueue
+2019.03.28 13:23:53 281 INFO    24 Assessing state of 1 messages in the OutboundQueue
+2019.03.28 13:23:58 282 INFO    24 Assessing state of 1 messages in the OutboundQueue
+2019.03.28 13:24:03 282 INFO    24 Assessing state of 1 messages in the OutboundQueue
+2019.03.28 13:24:08 282 INFO    24 Assessing state of 1 messages in the OutboundQueue
+2019.03.28 13:24:13 283 INFO    24 Assessing state of 1 messages in the OutboundQueue
+2019.03.28 13:24:18 284 INFO    24 Assessing state of 1 messages in the OutboundQueue
+2019.03.28 13:24:23 284 INFO    24 Assessing state of 1 messages in the OutboundQueue
+2019.03.28 13:24:28 284 INFO    24 Assessing state of 1 messages in the OutboundQueue
+2019.03.28 13:24:29 792 INFO    27 Processing 0 messages in the delayed inbound queue
+2019.03.28 13:24:33 284 INFO    24 Assessing state of 1 messages in the OutboundQueue
+2019.03.28 13:24:38 285 INFO    24 Lifecycle Service: OutboundQueue is empty  - waiting
+2019.03.28 13:24:44 934 INFO    21 : ENQUIRE_LINK:
+2019.03.28 13:24:44 934 INFO    21 Hex dump (16) bytes:
+2019.03.28 13:24:44 935 INFO    21 00000010:00000015:00000000:00000040:
+2019.03.28 13:24:44 935 INFO    21 
+2019.03.28 13:24:44 935 INFO    21 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=64
+2019.03.28 13:24:44 935 INFO    21  
+2019.03.28 13:24:44 935 INFO    21 :ENQUIRE_LINK_RESP:
+2019.03.28 13:24:44 935 INFO    21 Hex dump (16) bytes:
+2019.03.28 13:24:44 935 INFO    21 00000010:80000015:00000000:00000040:
+2019.03.28 13:24:44 935 INFO    21 
+2019.03.28 13:24:44 935 INFO    21 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=64
+2019.03.28 13:24:44 935 INFO    21  
+2019.03.28 13:25:29 792 INFO    27 Processing 0 messages in the delayed inbound queue
+2019.03.28 13:25:42 153 INFO    13 Socket exception: probably connection closed by client without UNBIND
+2019.03.28 13:25:42 154 INFO    13 StandardConnectionHandler waiting for connection
+2019.03.28 13:25:44 195 INFO    21 Socket exception: probably connection closed by client without UNBIND
+2019.03.28 13:25:44 196 INFO    21 0 receivers connected and bound
+2019.03.28 13:25:44 196 INFO    21 StandardConnectionHandler waiting for connection
+2019.03.28 13:26:29 792 INFO    27 Processing 0 messages in the delayed inbound queue
+2019.03.28 13:27:29 793 INFO    27 Processing 0 messages in the delayed inbound queue
+2019.03.28 13:28:29 794 INFO    27 Processing 0 messages in the delayed inbound queue
+2019.03.28 13:29:29 794 INFO    27 Processing 0 messages in the delayed inbound queue
+2019.03.28 13:30:29 797 INFO    27 Processing 0 messages in the delayed inbound queue
+2019.03.28 13:31:29 808 INFO    27 Processing 0 messages in the delayed inbound queue
+2019.03.28 13:32:29 810 INFO    27 Processing 0 messages in the delayed inbound queue
+2019.03.28 13:33:29 810 INFO    27 Processing 0 messages in the delayed inbound queue
+2019.03.28 13:34:29 810 INFO    27 Processing 0 messages in the delayed inbound queue
+2019.03.28 13:35:29 813 INFO    27 Processing 0 messages in the delayed inbound queue
+2019.03.28 13:36:29 813 INFO    27 Processing 0 messages in the delayed inbound queue
+2019.03.28 13:37:29 813 INFO    27 Processing 0 messages in the delayed inbound queue
+2019.03.28 13:38:29 814 INFO    27 Processing 0 messages in the delayed inbound queue
+2019.03.28 13:39:29 814 INFO    27 Processing 0 messages in the delayed inbound queue
+2019.03.28 13:40:29 815 INFO    27 Processing 0 messages in the delayed inbound queue
+2019.03.28 13:41:29 816 INFO    27 Processing 0 messages in the delayed inbound queue
+2019.03.28 13:42:29 816 INFO    27 Processing 0 messages in the delayed inbound queue
+2019.03.28 13:43:29 816 INFO    27 Processing 0 messages in the delayed inbound queue
+2019.03.28 13:44:29 817 INFO    27 Processing 0 messages in the delayed inbound queue
+2019.03.28 13:45:29 817 INFO    27 Processing 0 messages in the delayed inbound queue
+2019.03.28 13:46:18 299 INFO    20 StandardConnectionHandler accepted a connection
+2019.03.28 13:46:18 300 INFO    20 Protocol handler is of type MFDProtocolHandler
+2019.03.28 13:46:18 563 INFO    20 : BIND_TRANSCEIVER:
+2019.03.28 13:46:18 563 INFO    20 Hex dump (42) bytes:
+2019.03.28 13:46:18 563 INFO    20 0000002A:00000009:00000000:00000001:
+2019.03.28 13:46:18 563 INFO    20 6D666400:6D666440:736D7363:0056784D:
+2019.03.28 13:46:18 563 INFO    20 6664536D:73003400:0000
+2019.03.28 13:46:18 564 INFO    20 cmd_len=42,cmd_id=9,cmd_status=0,seq_no=1,system_id=mfd,password=mfd@smsc
+2019.03.28 13:46:18 564 INFO    20 system_type=VxMfdSms,interface_version=52,addr_ton=0,addr_npi=0,address_range=
+2019.03.28 13:46:18 564 INFO    20  
+2019.03.28 13:46:18 564 INFO    20 StandardProtocolHandler: setting address range to 
+2019.03.28 13:46:18 564 INFO    20 New transceiver session bound to SMPPSim
+2019.03.28 13:46:18 564 INFO    20 : BIND_TRANSCEIVER_RESP:
+2019.03.28 13:46:18 564 INFO    20 Hex dump (24) bytes:
+2019.03.28 13:46:18 564 INFO    20 00000018:80000009:00000000:00000001:
+2019.03.28 13:46:18 564 INFO    20 534D5050:53696D00:
+2019.03.28 13:46:18 564 INFO    20 cmd_len=0,cmd_id=-2147483639,cmd_status=0,seq_no=1,system_id=SMPPSim
+2019.03.28 13:46:18 564 INFO    20  
+2019.03.28 13:46:18 564 INFO    20 1 receivers connected and bound
+2019.03.28 13:46:18 565 INFO    23 InboundQueue: empty  - waiting
+2019.03.28 13:46:29 815 INFO    27 Processing 0 messages in the delayed inbound queue
+2019.03.28 13:47:18 589 INFO    20 : ENQUIRE_LINK:
+2019.03.28 13:47:18 589 INFO    20 Hex dump (16) bytes:
+2019.03.28 13:47:18 589 INFO    20 00000010:00000015:00000000:00000004:
+2019.03.28 13:47:18 589 INFO    20 
+2019.03.28 13:47:18 589 INFO    20 cmd_len=16,cmd_id=21,cmd_status=0,seq_no=4
+2019.03.28 13:47:18 589 INFO    20  
+2019.03.28 13:47:18 589 INFO    20 :ENQUIRE_LINK_RESP:
+2019.03.28 13:47:18 589 INFO    20 Hex dump (16) bytes:
+2019.03.28 13:47:18 589 INFO    20 00000010:80000015:00000000:00000004:
+2019.03.28 13:47:18 590 INFO    20 
+2019.03.28 13:47:18 590 INFO    20 cmd_len=0,cmd_id=-2147483627,cmd_status=0,seq_no=4
+2019.03.28 13:47:18 590 INFO    20  
+2019.03.28 13:47:20 248 INFO    20 : Standard SUBMIT_SM:
+2019.03.28 13:47:20 248 INFO    20 Hex dump (68) bytes:
+2019.03.28 13:47:20 248 INFO    20 00000044:00000004:00000000:00000007:
+2019.03.28 13:47:20 248 INFO    20 00000037:39393831:38303100:00003034:
+2019.03.28 13:47:20 249 INFO    20 33323030:30363630:31000000:00000001:
+2019.03.28 13:47:20 249 INFO    20 00030010:5363686E:656C6C65:72206661:
+2019.03.28 13:47:20 249 INFO    20 6872656E:
+2019.03.28 13:47:20 249 INFO    20 cmd_len=68,cmd_id=4,cmd_status=0,seq_no=7,service_type=,source_addr_ton=0
+2019.03.28 13:47:20 249 INFO    20 source_addr_npi=0,source_addr=79981801,dest_addr_ton=0,dest_addr_npi=0
+2019.03.28 13:47:20 249 INFO    20 dest_addr=04320006601,esm_class=0,protocol_ID=0,priority_flag=0
+2019.03.28 13:47:20 249 INFO    20 schedule_delivery_time=,validity_period=,registered_delivery_flag=1
+2019.03.28 13:47:20 249 INFO    20 replace_if_present_flag=0,data_coding=3,sm_default_msg_id=0,sm_length=16
+2019.03.28 13:47:20 249 INFO    20 short_message=Schneller fahren
+2019.03.28 13:47:20 249 INFO    20  
+2019.03.28 13:47:20 249 INFO    20 Validity period is not set: defaulting to 5 minutes from now
+2019.03.28 13:47:20 249 INFO    20 Generated default validity period=190328135220000+
+2019.03.28 13:47:20 250 INFO    20 Delaying response by 0ms
+2019.03.28 13:47:20 250 INFO    24 Assessing state of 1 messages in the OutboundQueue
+2019.03.28 13:47:20 250 INFO    20 :SUBMIT_SM_RESP:
+2019.03.28 13:47:20 250 INFO    20 Hex dump (18) bytes:
+2019.03.28 13:47:20 250 INFO    20 00000012:80000004:00000000:00000007:
+2019.03.28 13:47:20 250 INFO    20 3200
+2019.03.28 13:47:20 250 INFO    20 cmd_len=0,cmd_id=-2147483644,cmd_status=0,seq_no=7,message_id=2
+2019.03.28 13:47:20 250 INFO    20  
+2019.03.28 13:47:20 250 INFO    20 SubmitSM processing - response written to connection
+2019.03.28 13:47:25 250 INFO    24 Assessing state of 1 messages in the OutboundQueue
+2019.03.28 13:47:25 250 INFO    24 Message:7 state=DELIVERED
+2019.03.28 13:47:25 250 INFO    24 Delivery Receipt requested
+2019.03.28 13:47:29 814 INFO    27 Processing 0 messages in the delayed inbound queue
+2019.03.28 13:47:30 6   INFO    23 addressIsServicedByReceiver(79981801)
+2019.03.28 13:47:30 6   INFO    23 DELIVER_SM (receipt):
+2019.03.28 13:47:30 6   INFO    23 Hex dump (186) bytes:
+2019.03.28 13:47:30 6   INFO    23 000000BA:00000005:00000000:00000003:
+2019.03.28 13:47:30 6   INFO    23 00000030:34333230:30303636:30310000:
+2019.03.28 13:47:30 6   INFO    23 00373939:38313830:31000400:00000000:
+2019.03.28 13:47:30 6   INFO    23 0003006D:69643A32:20737562:3A303031:
+2019.03.28 13:47:30 6   INFO    23 20646C76:72643A30:30312073:75626D69:
+2019.03.28 13:47:30 6   INFO    23 74206461:74653A31:39303332:38313334:
+2019.03.28 13:47:30 6   INFO    23 3720646F:6E652064:6174653A:31393033:
+2019.03.28 13:47:30 6   INFO    23 32383133:34372073:7461743A:44454C49:
+2019.03.28 13:47:30 6   INFO    23 56524420:6572723A:30303020:54657874:
+2019.03.28 13:47:30 6   INFO    23 3A536368:6E656C6C:65722066:61687265:
+2019.03.28 13:47:30 6   INFO    23 6E001E00:02320004:27000102:1403000A:
+2019.03.28 13:47:30 6   INFO    23 34343132:33343536:3738
+2019.03.28 13:47:30 6   INFO    23 cmd_len=0,cmd_id=5,cmd_status=0,seq_no=3,service_type=,source_addr_ton=0
+2019.03.28 13:47:30 6   INFO    23 source_addr_npi=0,source_addr=04320006601,dest_addr_ton=0,dest_addr_npi=0
+2019.03.28 13:47:30 7   INFO    23 destination_addr=79981801,esm_class=4,protocol_ID=0,priority_flag=0
+2019.03.28 13:47:30 7   INFO    23 schedule_delivery_time=,validity_period=,registered_delivery_flag=0
+2019.03.28 13:47:30 7   INFO    23 replace_if_present_flag=0,data_coding=3,sm_default_msg_id=0,sm_length=109
+2019.03.28 13:47:30 7   INFO    23 short_message=id:2 sub:001 dlvrd:001 submit date:1903281347 done date:1903281347 stat:DELIVRD err:000 Text:Schneller fahren
+2019.03.28 13:47:30 7   INFO    23 TLV=30/2/3200,TLV=1063/1/02,TLV=5123/10/34343132333435363738
+2019.03.28 13:47:30 7   INFO    23  
+2019.03.28 13:47:30 7   INFO    23 InboundQueue: empty  - waiting
+2019.03.28 13:47:30 190 INFO    20 : DELIVER_SM_RESP:
+2019.03.28 13:47:30 190 INFO    20 Hex dump (17) bytes:
+2019.03.28 13:47:30 190 INFO    20 00000011:80000005:00000000:00000003:
+2019.03.28 13:47:30 190 INFO    20 00
+2019.03.28 13:47:30 190 INFO    20 cmd_len=17,cmd_id=-2147483643,cmd_status=0,seq_no=3,system_id= 
+2019.03.28 13:47:30 190 INFO    20  
+2019.03.28 13:47:30 251 INFO    24 Assessing state of 1 messages in the OutboundQueue
+2019.03.28 13:47:35 256 INFO    24 Assessing state of 1 messages in the OutboundQueue
+2019.03.28 13:47:40 256 INFO    24 Assessing state of 1 messages in the OutboundQueue
+2019.03.28 13:47:45 256 INFO    24 Assessing state of 1 messages in the OutboundQueue
+2019.03.28 13:47:50 256 INFO    24 Assessing state of 1 messages in the OutboundQueue
+2019.03.28 13:47:55 256 INFO    24 Assessing state of 1 messages in the OutboundQueue
+2019.03.28 13:48:00 256 INFO    24 Assessing state of 1 messages in the OutboundQueue

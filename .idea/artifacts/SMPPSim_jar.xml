@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="SMPPSim:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/SMPPSim_jar</output-path>
+    <root id="archive" name="SMPPSim.jar">
+      <element id="module-output" name="SMPPSim" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/junit.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/smpp.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
