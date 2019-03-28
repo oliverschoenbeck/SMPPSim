@@ -1,6 +1,7 @@
 package com.seleniumsoftware.SMPPSim;
 
 import com.seleniumsoftware.SMPPSim.exceptions.InboundQueueFullException;
+import com.seleniumsoftware.SMPPSim.exceptions.MessageStateNotFoundException;
 import com.seleniumsoftware.SMPPSim.exceptions.OutboundQueueFullException;
 import com.seleniumsoftware.SMPPSim.pdu.*;
 import com.seleniumsoftware.SMPPSim.util.LoggingUtilities;
@@ -143,5 +144,53 @@ public class MfdProtocolHandler extends StandardProtocolHandler {
                 }
             }
         }
+    }
+
+    void getCancelSMResponse(byte[] message, int len) throws Exception {
+        LoggingUtilities.hexDump(": CANCEL_SM:", message, len);
+        CancelSM smppmsg = new CancelSM();
+        byte[] resp_message;
+        smppmsg.demarshall(message);
+        if (smsc.isDecodePdus())
+            LoggingUtilities.logDecodedPdu(smppmsg);
+        smsc.writeDecodedSme(smppmsg.toString());
+        logger.info(" ");
+
+        // now make the response object
+        CancelSMResp smppresp = new CancelSMResp(smppmsg);
+
+        // Validate session
+        if ((!session.isBound()) || (!session.isTransmitter())) {
+            logger.warning("Invalid bind state. Must be bound as transmitter for this PDU");
+            wasInvalidBindState = true;
+            resp_message = smppresp.errorResponse(smppresp.getCmd_id(), PduConstants.ESME_RINVBNDSTS, smppresp.getSeq_no());
+            logPdu(": CANCEL_SM_RESP (ESME_RINVBNDSTS):", resp_message, smppresp);
+            smsc.incCancelSmERR();
+            connection.writeResponse(resp_message);
+            smsc.writeDecodedSmppsim(smppresp.toString());
+            return;
+        }
+
+        // Retrieve and set the message state
+        try {
+            smppresp = smsc.cancelSm(smppmsg, smppresp);
+        } catch (MessageStateNotFoundException e) {
+            resp_message = smppresp.errorResponse(smppresp.getCmd_id(), PduConstants.ESME_RCANCELFAIL, smppresp.getSeq_no());
+            logPdu(": CANCEL_SM_RESP (ESME_RCANCELFAIL):", resp_message, smppresp);
+            smsc.incCancelSmERR();
+            connection.writeResponse(resp_message);
+            smsc.writeDecodedSmppsim(smppresp.toString());
+            return;
+        }
+
+        // ....and turn it back into a byte array
+        resp_message = smppresp.marshall();
+        LoggingUtilities.hexDump(":CANCEL_SM_RESP:", resp_message, resp_message.length);
+        if (smsc.isDecodePdus())
+            LoggingUtilities.logDecodedPdu(smppresp);
+        logger.info(" ");
+        smsc.incCancelSmOK();
+        connection.writeResponse(resp_message);
+        smsc.writeDecodedSmppsim(smppresp.toString());
     }
 }

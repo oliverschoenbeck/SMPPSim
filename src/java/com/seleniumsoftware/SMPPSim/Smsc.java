@@ -391,11 +391,9 @@ public class Smsc {
 			r.setSeq_no(q.getSeq_no());
 			return r;
 		}
-		logger
-				.severe("Laws of physics violated. Well laws of logic anyway. Fell through conditions in smsc.cancelSm");
+		logger.severe("Laws of physics violated. Well laws of logic anyway. Fell through conditions in smsc.cancelSm");
 		logger.severe("Request is:" + q.toString());
-		throw new InternalException(
-				"Laws of physics violated. Well laws of logic anyway. Fell through conditions in smsc.cancelSm");
+		throw new InternalException("Laws of physics violated. Well laws of logic anyway. Fell through conditions in smsc.cancelSm");
 	}
 
 	private int cancelMessages(String service_type, int source_addr_ton,
